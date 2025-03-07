@@ -20,8 +20,8 @@ import CardContent from "@mui/material/CardContent";
 function App() {
     const menuItems01 = ["Mentorship", "Expert Help", "Freelancing", "More"];
     const menuItems02 = [
-        { text: "Become a Mentor", color: "black" },
-        { text: "Login", color: "black" },
+        { text: "Become a Mentor", color: "black", bg: "white" },
+        { text: "Login", color: "black", bg: "white" },
         { text: "Signup", color: "white", bg: "black" },
     ];
 
@@ -62,11 +62,8 @@ function App() {
                                     key={text}
                                     sx={{
                                         color: color,
-                                        backgroundColor: bg || "transparent",
+                                        backgroundColor: bg,
                                         textTransform: "capitalize",
-                                        "&:hover": bg
-                                            ? { backgroundColor: "#333" }
-                                            : {},
                                     }}
                                 >
                                     {text}
